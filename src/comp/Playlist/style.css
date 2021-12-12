@@ -1,0 +1,51 @@
+@import url("../../index.css");
+
+/* Playlibst cont */
+
+.playlist-cont {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.playlist-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist-cont .playlist-cards {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  padding: 0 20px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.playlist-cont .playlist-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist-cont .playlist-cards .playlist-card {
+  max-width: 250px;
+  height: 100px;
+  background: var(--bg-w);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.playlist-cont .playlist-cards .playlist-card img {
+  width: 70px;
+}
+
+.playlist-cont .playlist-cards .playlist-card .info h4 {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.playlist-cont .playlist-cards .playlist-card .info .count {
+  color: #807f7fe7;
+}

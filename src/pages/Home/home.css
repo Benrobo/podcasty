@@ -1,0 +1,22 @@
+@import url("../../index.css");
+
+/* middle container */
+.middle-cont {
+  width: 85%;
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: var(--bg-d);
+  padding: 20px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+}
+
+.middle-cont.open {
+  width: 85%;
+}
+
+.middle-cont.closes {
+  width: 100%;
+}

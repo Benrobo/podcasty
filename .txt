@@ -1,0 +1,94 @@
+<div class="right-sidebar">
+        <p>Right sidebar</p>
+        <div class="top-head"></div>
+        <div class="bottom-cont">
+            <!-- player cont -->
+            <div class="player-cont">
+                <div class="head">
+                    <span>Now Playing</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                      </svg>
+                </div>
+                <br>
+                <img src="https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-Mg-2ZYcmERT-eq8uGUY6vXN.300x300.jpg" alt="" class="img-cont">
+                <br>
+                <p>Title</p>
+                <div class="audio-control">
+                    <audio src="" controls></audio>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      /* right- sidebar */
+.right-sidebar {
+  width: 25%;
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px var(--dark-m);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: var(--bg-d);
+}
+
+.right-sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Player container */
+.player-cont {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 350px;
+  left: 0px;
+  background: var(--bg-w);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.player-cont .head {
+  font-size: 12px;
+  color: var(--text-w);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-inline-end: 12px;
+}
+
+.player-cont .head .icon {
+  padding: 5px;
+  width: 30px;
+  color: var(--text-or);
+  cursor: pointer;
+}
+
+.player-cont img {
+  width: 150px;
+  border-radius: 12px;
+}
+
+.player-cont .audio-control {
+  width: 100%;
+  height: 70px;
+  background: var(--bg-d);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.player-cont .audio-control audio {
+  width: 100%;
+}

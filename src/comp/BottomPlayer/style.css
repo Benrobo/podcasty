@@ -1,0 +1,55 @@
+@import url("../../index.css");
+
+/* Bottom Player */
+.bottom-player {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  background: var(--bg-d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+
+.bottom-player .main-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+
+  /* position: absolute; */
+}
+
+.bottom-player .main-cont .left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.bottom-player .main-cont .left img {
+  padding: 10px;
+  width: 80px;
+  border-radius: 20px;
+}
+
+.bottom-player .right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.bottom-player .right .podcast-title {
+  display: none;
+}
+
+.bottom-player .right .audio {
+  background: none;
+  width: 70%;
+}

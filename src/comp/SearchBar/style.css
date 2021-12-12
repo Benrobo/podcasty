@@ -1,0 +1,28 @@
+@import url("../../index.css");
+
+.search-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.search-cont:hover {
+  background: var(--bg-w);
+}
+
+.search-cont .icon {
+  padding: 10px;
+  width: 50px;
+  color: var(--text-or);
+}
+
+.search-cont input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-w);
+}
